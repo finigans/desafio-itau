@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926E167227EB67D000128CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E167127EB67D000128CB5 /* AppDelegate.swift */; };
+		926E167427EB67D000128CB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E167327EB67D000128CB5 /* SceneDelegate.swift */; };
+		926E167627EB67D000128CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E167527EB67D000128CB5 /* ViewController.swift */; };
+		926E167B27EB67D500128CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926E167A27EB67D500128CB5 /* Assets.xcassets */; };
+		926E167E27EB67D500128CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E167C27EB67D500128CB5 /* LaunchScreen.storyboard */; };
+		926E168627ECBAF200128CB5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E168527ECBAF200128CB5 /* MainCoordinator.swift */; };
+		926E168827ECE36500128CB5 /* EntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E168727ECE36500128CB5 /* EntryListViewModel.swift */; };
+		926E168B27ECE41500128CB5 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E168A27ECE41500128CB5 /* EntryListViewController.swift */; };
+		92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C0E527F240F500DE2C7E /* tabBar.swift */; };
+		92C4C14827F4BA6C00DE2C7E /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */; };
+		B529C22717878971C24A0F49 /* Pods_desafio_Itau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EEB0DA09E292F5DF051DC96 /* Pods-desafio-Itau.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-Itau.debug.xcconfig"; path = "Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau.debug.xcconfig"; sourceTree = "<group>"; };
+		926E166E27EB67D000128CB5 /* desafio-Itau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-Itau.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		926E167127EB67D000128CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		926E167327EB67D000128CB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		926E167527EB67D000128CB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		926E167A27EB67D500128CB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		926E167D27EB67D500128CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		926E167F27EB67D500128CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		926E168527ECBAF200128CB5 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		926E168727ECE36500128CB5 /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
+		926E168A27ECE41500128CB5 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		92C4C0E527F240F500DE2C7E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		A16DAE61BC46632E0848B14D /* Pods-desafio-Itau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-Itau.release.xcconfig"; path = "Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau.release.xcconfig"; sourceTree = "<group>"; };
+		AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_Itau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		926E166B27EB67D000128CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B529C22717878971C24A0F49 /* Pods_desafio_Itau.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926E166527EB67D000128CB5 = {
+			isa = PBXGroup;
+			children = (
+				926E167027EB67D000128CB5 /* desafio-Itau */,
+				926E166F27EB67D000128CB5 /* Products */,
+				A2AF145A6FDEC4E9CE253C01 /* Pods */,
+				D2C230F1E4DA53748229AA7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		926E166F27EB67D000128CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				926E166E27EB67D000128CB5 /* desafio-Itau.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		926E167027EB67D000128CB5 /* desafio-Itau */ = {
+			isa = PBXGroup;
+			children = (
+				926E168527ECBAF200128CB5 /* MainCoordinator.swift */,
+				926E168927ECE3E500128CB5 /* EntryList */,
+				926E167127EB67D000128CB5 /* AppDelegate.swift */,
+				926E167327EB67D000128CB5 /* SceneDelegate.swift */,
+				926E167527EB67D000128CB5 /* ViewController.swift */,
+				92C4C0E527F240F500DE2C7E /* tabBar.swift */,
+				926E167A27EB67D500128CB5 /* Assets.xcassets */,
+				926E167C27EB67D500128CB5 /* LaunchScreen.storyboard */,
+				926E167F27EB67D500128CB5 /* Info.plist */,
+			);
+			path = "desafio-Itau";
+			sourceTree = "<group>";
+		};
+		926E168927ECE3E500128CB5 /* EntryList */ = {
+			isa = PBXGroup;
+			children = (
+				926E168727ECE36500128CB5 /* EntryListViewModel.swift */,
+				926E168A27ECE41500128CB5 /* EntryListViewController.swift */,
+				92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */,
+			);
+			path = EntryList;
+			sourceTree = "<group>";
+		};
+		A2AF145A6FDEC4E9CE253C01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EEB0DA09E292F5DF051DC96 /* Pods-desafio-Itau.debug.xcconfig */,
+				A16DAE61BC46632E0848B14D /* Pods-desafio-Itau.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2C230F1E4DA53748229AA7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		926E166D27EB67D000128CB5 /* desafio-Itau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926E168227EB67D500128CB5 /* Build configuration list for PBXNativeTarget "desafio-Itau" */;
+			buildPhases = (
+				6FC8BD002539D6145C2FFCEA /* [CP] Check Pods Manifest.lock */,
+				926E166A27EB67D000128CB5 /* Sources */,
+				926E166B27EB67D000128CB5 /* Frameworks */,
+				926E166C27EB67D000128CB5 /* Resources */,
+				A7F1A91E07AC7E35F1A287F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "desafio-Itau";
+			productName = "desafio-Itau";
+			productReference = 926E166E27EB67D000128CB5 /* desafio-Itau.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		926E166627EB67D000128CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					926E166D27EB67D000128CB5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 926E166927EB67D000128CB5 /* Build configuration list for PBXProject "desafio-Itau" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 926E166527EB67D000128CB5;
+			productRefGroup = 926E166F27EB67D000128CB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				926E166D27EB67D000128CB5 /* desafio-Itau */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		926E166C27EB67D000128CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926E167E27EB67D500128CB5 /* LaunchScreen.storyboard in Resources */,
+				926E167B27EB67D500128CB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FC8BD002539D6145C2FFCEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafio-Itau-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F1A91E07AC7E35F1A287F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		926E166A27EB67D000128CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C4C14827F4BA6C00DE2C7E /* CategoryListViewController.swift in Sources */,
+				926E167627EB67D000128CB5 /* ViewController.swift in Sources */,
+				926E168627ECBAF200128CB5 /* MainCoordinator.swift in Sources */,
+				926E167227EB67D000128CB5 /* AppDelegate.swift in Sources */,
+				926E167427EB67D000128CB5 /* SceneDelegate.swift in Sources */,
+				926E168827ECE36500128CB5 /* EntryListViewModel.swift in Sources */,
+				92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */,
+				926E168B27ECE41500128CB5 /* EntryListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		926E167C27EB67D500128CB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				926E167D27EB67D500128CB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		926E168027EB67D500128CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		926E168127EB67D500128CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		926E168327EB67D500128CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEB0DA09E292F5DF051DC96 /* Pods-desafio-Itau.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "desafio-Itau/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.nttdata.desafio-Itau";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		926E168427EB67D500128CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16DAE61BC46632E0848B14D /* Pods-desafio-Itau.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "desafio-Itau/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.nttdata.desafio-Itau";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		926E166927EB67D000128CB5 /* Build configuration list for PBXProject "desafio-Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926E168027EB67D500128CB5 /* Debug */,
+				926E168127EB67D500128CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		926E168227EB67D500128CB5 /* Build configuration list for PBXNativeTarget "desafio-Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				926E168327EB67D500128CB5 /* Debug */,
+				926E168427EB67D500128CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 926E166627EB67D000128CB5 /* Project object */;
+}
