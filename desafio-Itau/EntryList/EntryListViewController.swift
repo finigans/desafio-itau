@@ -57,7 +57,7 @@ class EntryListViewController: UIViewController {
     @objc func suitDidChange(_ segmentedControl: UISegmentedControl){
         switch segmentedControl.selectedSegmentIndex {
                 case 0:
-                   view.backgroundColor = .gray
+                   view.backgroundColor = .white
                case 1:
                    view.backgroundColor = .lightGray
                case 2:
