@@ -11,12 +11,8 @@ class   segundaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-        navigationItem.title = "segunda viewController"
-      //  navigationItem.color = .white
-        
+        view.backgroundColor = .systemYellow
     }
-    
-    
+
 }
 

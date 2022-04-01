@@ -22,7 +22,7 @@ class MainCoordinator : Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        navigationController.navigationBar.prefersLargeTitles = true
+      //  navigationController.navigationBar.prefersLargeTitles = true
     }
     
     func start() {
