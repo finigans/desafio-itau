@@ -16,6 +16,19 @@ class EntryListViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
  
+        var testeView: UIView
+        testeView = UIView(frame: CGRect(x: 10, y: 190, width: 190, height: 190))
+        testeView.backgroundColor = UIColor(red: 0.622, green: 0.783, blue: 0.9, alpha: 1)
+        
+        testeView.layer.cornerRadius = 9
+        view.addSubview(testeView)
+        
+        var teste1View: UIView
+        teste1View = UIView(frame: CGRect(x: 230, y: 190, width: 190, height: 190))
+        teste1View.backgroundColor = UIColor(red: 0.965, green: 0.666, blue: 0.647, alpha: 1)
+        
+        teste1View.layer.cornerRadius = 9
+        view.addSubview(teste1View)
         creatSuitSegmentedControl()
     }
     

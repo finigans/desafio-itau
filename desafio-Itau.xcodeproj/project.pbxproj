@@ -17,6 +17,7 @@
 		926E168B27ECE41500128CB5 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E168A27ECE41500128CB5 /* EntryListViewController.swift */; };
 		92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C0E527F240F500DE2C7E /* tabBar.swift */; };
 		92C4C14827F4BA6C00DE2C7E /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */; };
+		92E1642827FB3CE60095B666 /* viewsTela1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1642727FB3CE60095B666 /* viewsTela1.swift */; };
 		B529C22717878971C24A0F49 /* Pods_desafio_Itau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		926E168A27ECE41500128CB5 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
 		92C4C0E527F240F500DE2C7E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 		92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		92E1642727FB3CE60095B666 /* viewsTela1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewsTela1.swift; sourceTree = "<group>"; };
 		A16DAE61BC46632E0848B14D /* Pods-desafio-Itau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-Itau.release.xcconfig"; path = "Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau.release.xcconfig"; sourceTree = "<group>"; };
 		AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_Itau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				926E168727ECE36500128CB5 /* EntryListViewModel.swift */,
 				926E168A27ECE41500128CB5 /* EntryListViewController.swift */,
 				92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */,
+				92E1642727FB3CE60095B666 /* viewsTela1.swift */,
 			);
 			path = EntryList;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				926E168827ECE36500128CB5 /* EntryListViewModel.swift in Sources */,
 				92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */,
 				926E168B27ECE41500128CB5 /* EntryListViewController.swift in Sources */,
+				92E1642827FB3CE60095B666 /* viewsTela1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

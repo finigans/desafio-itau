@@ -9,10 +9,18 @@ import UIKit
 
 class   segundaViewController: UIViewController {
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .gray
     }
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+ 
+   
 }
 
