@@ -30,12 +30,14 @@ class MainCoordinator : Coordinator {
         let viewController = EntryListViewController(viewModel: viewModel)
         let navigationViewController = UINavigationController(rootViewController: viewController)
         let segundaviewcontroller = segundaViewController()
+        let navigationSegunda = UINavigationController(rootViewController: segundaviewcontroller)
         viewController.navigationItem.title = "Meus Gastos"
+        segundaviewcontroller.navigationItem.title = "Categorias"
         
         
         let tabBar = UITabBarController()
    
-        tabBar.setViewControllers([navigationViewController,segundaviewcontroller], animated: false)
+        tabBar.setViewControllers([navigationViewController,navigationSegunda], animated: false)
         
         
         

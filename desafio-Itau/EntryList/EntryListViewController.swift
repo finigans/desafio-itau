@@ -8,8 +8,26 @@
 import Foundation
 import UIKit
 
-class EntryListViewController: UIViewController {
+class EntryListViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
     var viewModel: EntryListViewModelProtocol
+    
+    let tableView : UITableView = {
+        let tableView = UITableView(frame: .zero, style: .plain)
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return tableView
+    }()
+    
+    // criar testeView fora da viewdidload
     
     
     override func viewDidLoad() {
@@ -29,8 +47,17 @@ class EntryListViewController: UIViewController {
         
         teste1View.layer.cornerRadius = 9
         view.addSubview(teste1View)
+        view.addSubview(tableView)
         creatSuitSegmentedControl()
-    }
+
+        tableView.dataSource = self
+        
+        tableView.topAnchor.constraint(equalTo: testeView.bottomAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+}
     
     init(viewModel: EntryListViewModelProtocol) {
         self.viewModel = viewModel
@@ -41,14 +68,8 @@ class EntryListViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // segunda view contoller
-    
+
    
-    
-    
-    
-    
     
     func creatSuitSegmentedControl(){
         let items = ["Essa semana" , "Esse mês ", "Todos"]
@@ -57,15 +78,17 @@ class EntryListViewController: UIViewController {
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(segmentedControl)
 
-        NSLayoutConstraint.activate([
-            segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-            segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
-            segmentedControl.topAnchor.constraint(equalTo: view.topAnchor , constant: 140)
+          NSLayoutConstraint.activate ([
+        segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+        segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+        segmentedControl.topAnchor.constraint(equalTo: view.topAnchor , constant: 140),
+        
+    ])
+}
+    
+        
 
-
-        ])
-
-    }
+    
 
     @objc func suitDidChange(_ segmentedControl: UISegmentedControl){
         switch segmentedControl.selectedSegmentIndex {
