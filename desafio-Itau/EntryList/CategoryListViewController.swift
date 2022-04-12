@@ -7,42 +7,56 @@
 
 import UIKit
 
-class   segundaViewController: UIViewController {
+class segundaViewController: UIViewController  {
     
-
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+       return tableView
+    }()
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+          
         view.backgroundColor = .white
-        let label = UILabel(frame:CGRect (x: 10, y: 10, width: 300, height: 300))
-        label.font = UIFont(name: "Halvetica", size: 17)
-        label.text = "Contas Fixas"
-      
-        
-        
-        // ----------------
-    
-        
-        let label1 = UILabel(frame:CGRect (x: 10, y: 50, width: 300, height: 300))
-        label1.font = UIFont(name: "Halvetica", size: 17)
-        label1.text = "Sem Categoria"
-        
-        
-        
-        
-        
-        
-        view.addSubview(label)
-        view.addSubview(label1)
+            view.addSubview(tableView)
+            setupConstrants()
+            tableView.dataSource = self
+            tableView.delegate = self
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    private func setupConstrants(){
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
     }
     
- 
-   
+    
 }
+
+extension segundaViewController : UITableViewDataSource , UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCell" )
+        
+        cell.textLabel?.text = "Contas Fixas"
+        cell.detailTextLabel?.text = "Categorias"
+        cell.imageView?.image = UIImage(named: "banknote")
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+}
+
 
