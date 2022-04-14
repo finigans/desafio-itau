@@ -17,11 +17,9 @@ class EntryListViewController: UIViewController , UITableViewDataSource , UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "UITableViewCell")
-        cell.textLabel?.text = "Salario"
-        cell.detailTextLabel?.text = "Contas Fixas"
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListEntryTableViewCell.identifier) as! ListEntryTableViewCell
         
+        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -40,9 +38,41 @@ class EntryListViewController: UIViewController , UITableViewDataSource , UITabl
     
     var viewModel: EntryListViewModelProtocol
     
+    lazy var segmentedControl: UISegmentedControl = {
+        let items = ["Essa semana" , "Esse mês ", "Todos"]
+        let segmentedControl = UISegmentedControl(items: items)
+        segmentedControl.addTarget(self, action: #selector(suitDidChange(_:)), for: .valueChanged)
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        return segmentedControl
+    }()
+    
+    var testeView: incomeView = {
+        
+        let testeView = incomeView()
+        testeView.translatesAutoresizingMaskIntoConstraints = false
+        testeView.backgroundColor = UIColor(red: 0.622, green: 0.783, blue: 0.9, alpha: 1)
+        testeView.layer.cornerRadius = 9
+        
+        return testeView
+    }()
+    
+    
+    var teste1View: iconBackView = {
+        
+       let teste1View = iconBackView()
+        teste1View.translatesAutoresizingMaskIntoConstraints = false
+        teste1View.backgroundColor = UIColor(red: 0.965, green: 0.666, blue: 0.647, alpha: 1)
+        teste1View.layer.cornerRadius = 9
+        
+        return teste1View
+    }()
+
+
+    
     let tableView : UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
        
+        tableView.register(ListEntryTableViewCell.self , forCellReuseIdentifier:ListEntryTableViewCell.identifier)
         tableView.allowsMultipleSelection = true
         tableView.separatorColor = .gray
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,66 +81,66 @@ class EntryListViewController: UIViewController , UITableViewDataSource , UITabl
     }()
     
     // criar testeView fora da viewdidload
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
  
-        var testeView: UIView
-        testeView = UIView(frame: CGRect(x: 10, y: 190, width: 190, height: 190))
-        testeView.backgroundColor = UIColor(red: 0.622, green: 0.783, blue: 0.9, alpha: 1)
-        testeView.layer.cornerRadius = 9
-        
-        
-        var teste1View: UIView
-        teste1View = UIView(frame: CGRect(x: 230, y: 190, width: 190, height: 190))
-        teste1View.backgroundColor = UIColor(red: 0.965, green: 0.666, blue: 0.647, alpha: 1)
-        teste1View.layer.cornerRadius = 9
-        
-        
-        view.addSubview(testeView)
-        view.addSubview(teste1View)
-        view.addSubview(tableView)
+
         creatSuitSegmentedControl()
+        setupIncomeView()
+        setupoutcomeView()
+        setUpTableView()
+        
 
         tableView.dataSource = self
         tableView.delegate = self
         
         
-        tableView.topAnchor.constraint(equalTo: testeView.bottomAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
 }
+    
+  
+   
     
     init(viewModel: EntryListViewModelProtocol) {
         self.viewModel = viewModel
+      
         super.init(nibName: nil, bundle: nil)
-        
     }
-    
+    // not ini
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-   
-    
-    func creatSuitSegmentedControl(){
-        let items = ["Essa semana" , "Esse mês ", "Todos"]
-        let segmentedControl = UISegmentedControl(items: items)
-        segmentedControl.addTarget(self, action: #selector(suitDidChange(_:)), for: .valueChanged)
-        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+    private func creatSuitSegmentedControl(){
         view.addSubview(segmentedControl)
-
-          NSLayoutConstraint.activate ([
-        segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-        segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
-        segmentedControl.topAnchor.constraint(equalTo: view.topAnchor , constant: 140),
-        
-    ])
+        segmentedControl.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        segmentedControl.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive  = true
+        segmentedControl.rightAnchor.constraint(equalTo: view.rightAnchor , constant: -16).isActive = true
 }
+    private func setupIncomeView(){
+        view.addSubview(testeView)
+        testeView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20).isActive = true
+        testeView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 16).isActive = true
+        testeView.heightAnchor.constraint(equalToConstant: 124).isActive = true
+        testeView.widthAnchor.constraint(equalToConstant: 190).isActive = true
+
+        }
+    private func setupoutcomeView(){
+        view.addSubview(teste1View)
+        teste1View.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20).isActive = true
+        teste1View.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -16).isActive = true
+        teste1View.heightAnchor.constraint(equalToConstant: 124).isActive = true
+        teste1View.widthAnchor.constraint(equalToConstant: 190).isActive = true
+}
+    private func setUpTableView(){
+        view.addSubview(tableView)
+        tableView.topAnchor.constraint(equalTo: testeView.bottomAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
 
     
 

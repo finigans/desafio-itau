@@ -18,6 +18,9 @@
 		92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C0E527F240F500DE2C7E /* tabBar.swift */; };
 		92C4C14827F4BA6C00DE2C7E /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */; };
 		92E1642C27FDC62D0095B666 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1642B27FDC62D0095B666 /* Api.swift */; };
+		92E164302805E1D70095B666 /* ListEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1642F2805E1D70095B666 /* ListEntryTableViewCell.swift */; };
+		92E16432280742CF0095B666 /* incomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16431280742CF0095B666 /* incomeView.swift */; };
+		92E16436280852510095B666 /* iconBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E16435280852510095B666 /* iconBackView.swift */; };
 		B529C22717878971C24A0F49 /* Pods_desafio_Itau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		92C4C0E527F240F500DE2C7E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 		92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		92E1642B27FDC62D0095B666 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		92E1642F2805E1D70095B666 /* ListEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntryTableViewCell.swift; sourceTree = "<group>"; };
+		92E16431280742CF0095B666 /* incomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incomeView.swift; sourceTree = "<group>"; };
+		92E16435280852510095B666 /* iconBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconBackView.swift; sourceTree = "<group>"; };
 		A16DAE61BC46632E0848B14D /* Pods-desafio-Itau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-Itau.release.xcconfig"; path = "Target Support Files/Pods-desafio-Itau/Pods-desafio-Itau.release.xcconfig"; sourceTree = "<group>"; };
 		AD574A248B4B5565D7CDFB47 /* Pods_desafio_Itau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_Itau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,7 +98,10 @@
 				926E168727ECE36500128CB5 /* EntryListViewModel.swift */,
 				926E168A27ECE41500128CB5 /* EntryListViewController.swift */,
 				92C4C14727F4BA6C00DE2C7E /* CategoryListViewController.swift */,
+				92E1642F2805E1D70095B666 /* ListEntryTableViewCell.swift */,
 				92E1642B27FDC62D0095B666 /* Api.swift */,
+				92E16431280742CF0095B666 /* incomeView.swift */,
+				92E16435280852510095B666 /* iconBackView.swift */,
 			);
 			path = EntryList;
 			sourceTree = "<group>";
@@ -230,12 +239,15 @@
 			files = (
 				92C4C14827F4BA6C00DE2C7E /* CategoryListViewController.swift in Sources */,
 				926E167627EB67D000128CB5 /* ViewController.swift in Sources */,
+				92E16436280852510095B666 /* iconBackView.swift in Sources */,
 				926E168627ECBAF200128CB5 /* MainCoordinator.swift in Sources */,
+				92E164302805E1D70095B666 /* ListEntryTableViewCell.swift in Sources */,
 				926E167227EB67D000128CB5 /* AppDelegate.swift in Sources */,
 				926E167427EB67D000128CB5 /* SceneDelegate.swift in Sources */,
 				926E168827ECE36500128CB5 /* EntryListViewModel.swift in Sources */,
 				92C4C0E627F240F500DE2C7E /* tabBar.swift in Sources */,
 				92E1642C27FDC62D0095B666 /* Api.swift in Sources */,
+				92E16432280742CF0095B666 /* incomeView.swift in Sources */,
 				926E168B27ECE41500128CB5 /* EntryListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

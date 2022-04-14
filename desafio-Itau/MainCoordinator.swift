@@ -20,9 +20,13 @@ protocol MainCoordinatorProtocol {
 class MainCoordinator : Coordinator {
     var navigationController: UINavigationController
     
+    let tabBar = UITabBarController()
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-      //  navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.isHidden = true
+    
+        
     }
     
     func start() {
@@ -35,10 +39,10 @@ class MainCoordinator : Coordinator {
         segundaviewcontroller.navigationItem.title = "Categorias"
         
         
-        let tabBar = UITabBarController()
+       
    
-        tabBar.setViewControllers([navigationViewController,navigationSegunda], animated: false)
-        
+        tabBar.viewControllers = [navigationViewController,navigationSegunda]
+        tabBar.tabBar.backgroundColor = .white
         
         
         guard let items = tabBar.tabBar.items else {

@@ -48,7 +48,7 @@ extension segundaViewController : UITableViewDataSource , UITableViewDelegate {
         
         cell.textLabel?.text = "Contas Fixas"
         cell.detailTextLabel?.text = "Categorias"
-        cell.imageView?.image = UIImage(named: "banknote")
+   //   cell.imageView?.image = UIImage(named: "banknote")
         return cell
         
     }
